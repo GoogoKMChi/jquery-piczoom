@@ -1,0 +1,39 @@
+@import url("loaders.css");
+.kmc-pic-border{
+	width: 200px;
+	height: 200px;
+	float: left;
+	
+	border: 3px dotted #D3D3D3;
+	box-shadow: 0px 0px 50px -15px;
+	margin: 10px;
+	overflow: hidden;
+}
+.ball-scale-multiple > div{
+	width: 100px !important;
+	height: 100px !important;
+	background: #00ccaa;
+	transition: all 0.7s;
+}
+.kmc-loading{
+	transition: top 0.7s,left 0.7s,transform 0.7s;
+	left: 50px;
+	top: 50px;
+	transform: none !important;
+}
+.kmc-loading-end{
+    transform: scale(4) !important;
+    top: -100px;
+    left: 200px;
+}
+.kmc-loading-end-child{
+	background-color: rgba(255,255,255,0) !important;
+}
+.kmc-pic-border-select{
+	border: 3px solid #FF0000 !important;
+	box-shadow: 0px 0px 20px -2px #FF0000 !important;
+}
+.kmc-pic-border-selectable{
+	transition: all 0.7s; 
+	cursor: pointer;
+}

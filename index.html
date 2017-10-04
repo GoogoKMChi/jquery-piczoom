@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoogoKMChi 的jquery插件</title>
+    <link rel="stylesheet" href="plugin/PicManage/jquery.KMC.PicManage.css">
+    <link rel="stylesheet" href="plugin/PicZoom/jquery.KMC.PicZoom.css">
+</head>
+
+<body>
+    <img k-src="imgs/my-dog.jpg" alt="" id="test-img">
+</body>
+<script src="jquery.js"></script>
+<script src="plugin/PicManage/jquery.KMC.PicManage.js"></script>
+<script src="plugin/PicZoom/jquery.KMC.PicZoom.js"></script>
+<script>
+    $('#test-img').kmcPicManage({
+        'selectable': false,
+        'zoomable': true,
+        'zoomScroll': true,
+        'zoomDrag': true,
+        'zoomOnAnimate': true,
+        'zoomOffAnimate': true,
+    });
+</script>
+
+</html>
