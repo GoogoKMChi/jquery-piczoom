@@ -8,12 +8,19 @@
     <title>GoogoKMChi 的jquery插件</title>
     <link rel="stylesheet" href="plugin/PicManage/jquery.KMC.PicManage.css">
     <link rel="stylesheet" href="plugin/PicZoom/jquery.KMC.PicZoom.css">
+    <style>
+        #test-img2{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 
 <body>
     <img k-src="imgs/my-dog.jpg" alt="" id="test-img">
+    <img src="imgs/my-dog.jpg" alt="" id="test-img2" title="点击放大">
 </body>
-<script src="jquery.js"></script>
+<script src="JS/jquery.js"></script>
 <script src="plugin/PicManage/jquery.KMC.PicManage.js"></script>
 <script src="plugin/PicZoom/jquery.KMC.PicZoom.js"></script>
 <script>
@@ -23,8 +30,15 @@
         'zoomScroll': true,
         'zoomDrag': true,
         'zoomOnAnimate': true,
-        'zoomOffAnimate': true,
     });
+    $('#test-img2').on('click',function(){
+        $(this).kmcPicZoom({
+            'origin': true,
+            'zoomScroll': true,
+            'zoomDrag': true,
+            'zoomOnAnimate': true,
+        });
+    })
 </script>
 
 </html>
